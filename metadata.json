@@ -1,0 +1,6 @@
+{
+  "name": "李宥杰個人網站 & 旅遊規劃",
+  "description": "個人網站，包含個人的工作/實習經歷、學歷、語言能力、專業證照，以及洛杉磯旅遊規劃提案。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
