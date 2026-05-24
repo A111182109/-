@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { FileText, Video, Download } from 'lucide-react';
+import Presentation from './Presentation';
 
 export default function TravelPlan() {
   return (
@@ -58,21 +59,8 @@ export default function TravelPlan() {
           </a>
         </div>
         <div className="p-6 md:p-8">
-          <div className="w-full h-[800px] border border-slate-700/50 rounded-xl overflow-hidden bg-slate-900 relative">
-            {/* Loading / Fallback state behind the iframe */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center text-slate-400 z-0">
-              <FileText className="w-16 h-16 text-slate-600 mb-4" />
-              <p className="mb-4">正在載入 PDF ...</p>
-              <p className="text-sm">如無法正常顯示，請點擊右上方按鈕下載查看。</p>
-            </div>
-            
-            {/* Iframe to display PDF natively */}
-            <iframe 
-              src="https://drive.google.com/file/d/1ikEdnsLIH2b37ttjpsCeC3vxfmwHcSvi/preview" 
-              className="w-full h-full absolute inset-0 z-10"
-              title="洛杉磯奢華假期企劃書"
-              allow="autoplay"
-            ></iframe>
+          <div className="w-full bg-slate-900 rounded-xl overflow-hidden shadow-2xl relative border border-slate-700">
+            <Presentation />
           </div>
         </div>
       </section>
