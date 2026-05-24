@@ -45,7 +45,7 @@ export default function Presentation() {
   const slide = slides[currentSlide];
 
   return (
-    <div className="w-full aspect-[16/9] bg-stone-50 rounded-xl overflow-hidden relative flex flex-col text-slate-800">
+    <div className="w-full h-[650px] md:h-[850px] bg-stone-50 rounded-xl overflow-hidden relative flex flex-col text-slate-800">
       <div className="flex-grow relative w-full h-full">
         <AnimatePresence mode="wait">
           <motion.div
